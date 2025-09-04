@@ -26,3 +26,7 @@
   - [推荐站点](sites/recommended.md)
   - [镜像站](sites/mirrors.md)
   - [工具站](sites/tools.md)
+
+---
+
+*Powered by [Docsify](https://docsify.js.org) & Gemini*

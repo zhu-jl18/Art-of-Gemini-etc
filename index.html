@@ -67,7 +67,11 @@
         nextText: '下一章节',
         crossChapter: true,
         crossChapterText: true,
-      }
+      },
+      lastUpdated: {
+        format: '{YYYY}-{MM}-{DD} {HH}:{mm}',
+        text: '> 最后更新于: '
+      },
     }
   </script>
   <!-- Docsify核心 -->
@@ -78,6 +82,8 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
   <!-- 分页导航插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+  <!-- 最后更新时间插件 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-last-updated/dist/docsify-last-updated.min.js"></script>
   <!-- Prism语法高亮 -->
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
