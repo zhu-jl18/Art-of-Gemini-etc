@@ -1,13 +1,9 @@
-![logo](https://cdn.jsdelivr.net/gh/docsifyjs/docsify@master/docs/_media/icon.svg)
+# Art of Gemini etc. 免费AI资源站
 
-# 免费AI资源站
+> 探索、学习、实践 — 您的AI技术导航站
 
-> 收集整理各种免费大模型资源
+- **免费API**: 主流大模型免费API获取教程
+- **开源项目**: 精选AI相关开源项目与工具
+- **公益站点**: 优质的免费AI服务与资源
 
-- 专业的资源整理
-- 详细的使用教程  
-- 持续更新维护
-- 朋友圈内部分享
-
-[开始使用](#免费ai资源收集站)
-[GitHub](https://github.com/)
+[立即开始](/)
