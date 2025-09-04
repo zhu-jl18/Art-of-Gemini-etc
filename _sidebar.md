@@ -1,3 +1,5 @@
+- [**前言**](preface.md)
+
 - **第一部分：基础应用**
   - [**第一章：桌面与网页聊天界面**](part1/chapter1-gui-clients.md)
   - [**第二章：命令行(CLI)工具**](part1/chapter2-cli-tools.md)

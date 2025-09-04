@@ -21,8 +21,19 @@
       --code-background: #272822;
     }
     body {
-      background-color: var(--main-background);
+      background-color: transparent; /* 让粒子背景可以透出来 */
       color: var(--text-color);
+    }
+    .markdown-section {
+      background-color: var(--main-background); /* 为内容页面设置坚实的背景 */
+    }
+    section.cover.show {
+      background: transparent !important; /* 强制覆盖掉主题自带的封面背景 */
+    }
+    /* When cover is showing, lock the screen */
+    html, body.showing-cover {
+      overflow: hidden;
+      height: 100%; /* Ensure they don't exceed viewport height */
     }
     .sidebar {
       background-color: var(--sidebar-background);
@@ -105,7 +116,7 @@
       repo: '',
       loadSidebar: true,
       loadNavbar: true,
-      coverpage: true,
+      coverpage: false,
       auto2top: true,
       maxLevel: 4,
       subMaxLevel: 2,
