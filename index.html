@@ -125,9 +125,9 @@
     
     /* 优化侧边栏收起按钮样式 */
     .sidebar-toggle {
-      position: absolute;
+      position: fixed;
       top: 15px;
-      right: 10px;
+      left: 250px; /* 位于侧边栏右侧边缘 */
       z-index: 100;
       background-color: rgba(249, 38, 114, 0.2); /* 使用主题色的半透明背景 */
       border: none;
@@ -139,11 +139,12 @@
       align-items: center;
       cursor: pointer;
       transition: all 0.3s ease;
+      transform: translateX(-50%); /* 使按钮中心对齐侧边栏边缘 */
     }
     
     .sidebar-toggle:hover {
       background-color: rgba(249, 38, 114, 0.3); /* 悬停时加深背景色 */
-      transform: scale(1.1); /* 悬停时轻微放大 */
+      transform: translateX(-50%) scale(1.1); /* 悬停时轻微放大 */
     }
     
     .sidebar-toggle-button {
@@ -161,6 +162,12 @@
       width: 14px;
       margin: 1px 0;
       transition: 0.3s;
+    }
+    
+    /* 当侧边栏收起时，调整按钮位置 */
+    .sidebar-toggle.close {
+      left: 0;
+      transform: translateX(0);
     }
     
     /* 优化侧边栏导航间距 */
