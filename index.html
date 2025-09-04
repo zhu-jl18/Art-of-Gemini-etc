@@ -123,6 +123,36 @@
       border-right: 1px solid rgba(255, 255, 255, 0.1); /* 细边框分隔 */
     }
     
+    /* 优化侧边栏收起按钮样式 */
+    .sidebar-toggle {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      background-color: rgba(30, 30, 30, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      padding: 5px;
+    }
+    
+    .sidebar-toggle-button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+    }
+    
+    .sidebar-toggle-button span {
+      background-color: var(--text-color);
+      height: 2px;
+      width: 18px;
+      margin: 2px 0;
+      transition: 0.3s;
+    }
+    
     /* 优化侧边栏导航间距 */
     .sidebar-nav {
       padding: 0 20px;
