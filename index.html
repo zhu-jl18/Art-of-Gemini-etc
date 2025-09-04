@@ -125,9 +125,9 @@
     
     /* 优化侧边栏收起按钮样式 */
     .sidebar-toggle {
-      position: fixed;
+      position: absolute;
       top: 15px;
-      left: 260px; /* 位于侧边栏右侧边缘稍外一点的位置 */
+      right: 10px;
       z-index: 100;
       background-color: rgba(249, 38, 114, 0.2); /* 使用主题色的半透明背景 */
       border: none;
@@ -144,11 +144,6 @@
     .sidebar-toggle:hover {
       background-color: rgba(249, 38, 114, 0.3); /* 悬停时加深背景色 */
       transform: scale(1.1); /* 悬停时轻微放大 */
-    }
-    
-    /* 当侧边栏收起时，调整按钮位置 */
-    .close .sidebar-toggle {
-      left: 10px;
     }
     
     .sidebar-toggle-button {
