@@ -13,6 +13,6 @@
   - [**第八章：Docker Compose实战**](part3/chapter8-docker-compose.md)
 
 - **附录**
-  - [模型竞技场](appendix/model-arena.md)
-  - [我的实践记录](appendix/my-lab-notes.md)
-  - [内容构建计划](CONTENT_PLAN.md)
+  - [**模型竞技场**](appendix/model-arena.md)
+  - [**我的实践记录**](appendix/my-lab-notes.md)
+  - [**内容构建计划**](CONTENT_PLAN.md)
