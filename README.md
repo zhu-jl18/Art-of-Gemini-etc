@@ -25,3 +25,5 @@
 *最后更新：2025-01-09*
 
 > 🚀 现已支持自定义域名访问：[ai.functorfish.dpdns.org](https://ai.functorfish.dpdns.org)
+
+<!-- Trigger new deployment -->
