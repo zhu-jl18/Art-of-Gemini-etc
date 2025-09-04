@@ -117,10 +117,9 @@
     }
     
     .sidebar {
-      background-color: rgba(30, 30, 30, 0.7); /* 更透明的背景 */
+      background-color: rgba(30, 30, 30, 0.5); /* 更透明的背景 */
       /* 优化侧边栏内边距 */
       padding: 20px 0;
-      backdrop-filter: blur(3px); /* 更轻微的毛玻璃效果 */
       border-right: 1px solid rgba(255, 255, 255, 0.1); /* 细边框分隔 */
     }
     
@@ -131,25 +130,35 @@
     
     .sidebar-nav > li {
       margin: 0.5em 0;
+      /* 确保列表项正确对齐 */
+      display: block;
+      width: 100%;
     }
     
-    .sidebar-nav > li > a.active {
-      border-right-color: var(--theme-color) !important;
-      background-color: rgba(249, 38, 114, 0.15); /* 激活状态的背景色 */
-      border-radius: 3px;
+    /* 优化侧边栏标题对齐 */
+    .sidebar-nav > li:first-child {
+      margin-top: 0;
     }
     
     a, .sidebar-nav > li > a {
       color: var(--text-color);
       /* 优化链接间距 */
-      padding: 0.3em 0;
+      padding: 0.4em 1em; /* 增加水平内边距 */
       text-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* 文字阴影确保可读性 */
+      display: block; /* 确保链接正确对齐 */
+      border-radius: 4px; /* 圆角效果 */
+      transition: all 0.2s ease; /* 平滑过渡效果 */
+      margin: 0; /* 确保没有额外的外边距 */
     }
     
     a:hover, .sidebar-nav > li > a:hover {
       color: var(--theme-color);
-      background-color: rgba(249, 38, 114, 0.1); /* 悬停时的轻微背景色 */
-      border-radius: 3px;
+      background-color: rgba(249, 38, 114, 0.15); /* 悬停时的轻微背景色 */
+    }
+    
+    .sidebar-nav > li > a.active {
+      border-right: 3px solid var(--theme-color) !important; /* 更明显的激活状态标记 */
+      background-color: rgba(249, 38, 114, 0.2); /* 激活状态的背景色 */
     }
     
     .markdown-section strong {
